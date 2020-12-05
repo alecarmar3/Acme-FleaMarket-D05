@@ -13,6 +13,8 @@
 package acme.entities.roles;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -26,6 +28,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "user_account_id")
+})
 public class Buyer extends UserRole {
 
 	// Serialisation identifier -----------------------------------------------
