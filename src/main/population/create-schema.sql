@@ -228,13 +228,25 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+create index IDXmnox5ecej3werjujk8kxcnfb0 on `acme_item` (`final_mode`);
+create index IDXpistaxqxs9wi9bg355n8rhl77 on `acme_item` (`supplier_id`);
+create index IDXk9xf863x9koosi2u10i3eddxy on `acme_item` (`ticker`);
 
     alter table `acme_item` 
        add constraint UK_qmgye25wx96pq764xggwykrsr unique (`ticker`);
-create index IDXfviyt6jwhwjnb2cbs6qft54o4 on `acme_item_request` (`ticker`);
+create index IDXfviyt6jwhwjnb2cbs6qft54o4 on `acme_item_request` (`ticker` asc);
+create index IDX6omytt035d9q7ssqk620fgrmp on `acme_item_request` (`buyer_id`);
+create index IDXuqdn8db4vfus11v3nup3lcau on `acme_item_request` (`acme_item_id`);
 
     alter table `acme_item_request` 
        add constraint UK_oby64nw8p7nau9qw0b43i4g2q unique (`ticker`);
+create index IDXhnql3xtwsfihb8c757jb9ti2 on `advertisement` (`displayed_until`);
+create index IDX8179mtglcgsrdvlbg3s35bimb on `buyer` (`user_account_id`);
+create index IDX6a50xbt2tt8c9ki7dgsc6379q on `material_sheet` (`stars`);
+create index IDXjfivymhh2fi7egrnx99uiejpx on `news` (`deadline`);
+create index IDXqhte7jse2x0vkkr2qjt4tb0dl on `specification_sheet` (`acme_item_id`);
+create index IDXhfqb13c8yymsky5fkj66g448 on `supplier` (`user_account_id`);
+create index IDX6diph4y2lg9obtjhtn0e7ncvc on `tool_sheet` (`stars`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
