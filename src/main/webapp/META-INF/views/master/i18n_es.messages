@@ -40,7 +40,7 @@ master.menu.anonymous.tool-sheet.list = Listar Hojas de herramientas
 master.menu.authenticated = Autenticado
 master.menu.authenticated.advertisement.list = Listar Anuncios
 master.menu.authenticated.figment.list = Listar Invenciones
-master.menu.authenticated.item.list = Listar Objetos
+master.menu.authenticated.acme-item.list = Listar Objetos
 master.menu.authenticated.material-sheet.list = Listar Hojas de materiales
 master.menu.authenticated.news.list = Listar Noticias
 master.menu.authenticated.suggestion.list = Listar Sugerencias
@@ -49,13 +49,14 @@ master.menu.authenticated.tool-sheet.list = Listar Hojas de herramientas
 # master.menu.supplier #######################################################
 
 master.menu.supplier = Proveedor
-master.menu.supplier.item.list-mine = Listar mis objetos
-master.menu.supplier.item-request.list-to-mine = Listar peticiones a mis objetos
+master.menu.supplier.acme-item.create = Crear objeto
+master.menu.supplier.acme-item.list-mine = Listar mis objetos
+master.menu.supplier.acme-item-request.list-to-mine = Listar peticiones a mis objetos
 
 # master.menu.buyer #######################################################
 
 master.menu.buyer = Comprador
-master.menu.buyer.item-request.list-mine = Listar mis peticiones de objetos
+master.menu.buyer.acme-item-request.list-mine = Listar mis peticiones de objetos
 
 # master.menu.administrator ###################################################
 
@@ -93,6 +94,10 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.supplier = Datos de proveedor
+master.menu.user-account.become-supplier = Hazte proveedor
+master.menu.user-account.buyer = Datos de comprador
+master.menu.user-account.become-buyer = Hazte comprador
 
 ﻿# master.footer ###############################################################
 
