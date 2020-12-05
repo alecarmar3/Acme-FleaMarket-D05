@@ -73,4 +73,13 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
+	<!-- Configuration -->
+	
+	<bean name="configuration" class="acme.entities.Configuration">
+		<property name="spamWords" value="sex, hard core, viagra, cialis, nigeria, you’ve won, million dollar, sexo, has ganado, millón de dólares"/>
+		<property name="spamThreshold" value="0.025"/>
+		<property name="newsCategories" value="Breaking news, Important news, Warning, Information"/>
+		<property name="acmeItemCategories" value="Toilette, Kitchen, Living room, Sleeping room, Garden"/>
+	</bean>
+	
 </beans>

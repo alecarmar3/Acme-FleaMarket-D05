@@ -1,7 +1,6 @@
 
 package acme.entities;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
@@ -26,16 +25,15 @@ public class SpecificationSheet extends DomainEntity {
 
 	// Attributes --------------------------------------------------------------
 
-	@Column(unique = true)
 	@NotNull
 	@Min(0)
 	private Integer				indexer;
 
 	@NotBlank
-	private String				title;
+	private String				sheetTitle;
 
 	@NotBlank
-	private String				description;
+	private String				sheetDescription;
 
 	@URL
 	private String				photo;
@@ -43,6 +41,6 @@ public class SpecificationSheet extends DomainEntity {
 	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
-	private Item				item;
+	private AcmeItem			acmeItem;
 
 }
