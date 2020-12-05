@@ -30,7 +30,7 @@
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.advertisement.list" action="/authenticated/advertisement/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.figment.list" action="/authenticated/figment/list"/>
-			<acme:menu-suboption code="master.menu.authenticated.item.list" action="/authenticated/item/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.acme-item.list" action="/authenticated/acme-item/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.material-sheet.list" action="/authenticated/material-sheet/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.news.list" action="/authenticated/news/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.suggestion.list" action="/authenticated/suggestion/list"/>
@@ -39,12 +39,13 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.supplier" access="hasRole('Supplier')">
-			<acme:menu-suboption code="master.menu.supplier.item.list-mine" action="/supplier/item/list-mine"/>
-			<acme:menu-suboption code="master.menu.supplier.item-request.list-to-mine" action="/supplier/item-request/list-to-mine"/>
+			<acme:menu-suboption code="master.menu.supplier.acme-item.create" action="/supplier/acme-item/create"/>
+			<acme:menu-suboption code="master.menu.supplier.acme-item.list-mine" action="/supplier/acme-item/list-mine"/>
+			<acme:menu-suboption code="master.menu.supplier.acme-item-request.list-to-mine" action="/supplier/acme-item-request/list-to-mine"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.buyer" access="hasRole('Buyer')">
-			<acme:menu-suboption code="master.menu.buyer.item-request.list-mine" action="/buyer/item-request/list-mine"/>
+			<acme:menu-suboption code="master.menu.buyer.acme-item-request.list-mine" action="/buyer/acme-item-request/list-mine"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -90,6 +91,10 @@
 			<acme:menu-suboption code="master.menu.user-account.provider" action="/authenticated/provider/update" access="hasRole('Provider')"/>
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-supplier" action="/authenticated/supplier/create" access="!hasRole('Supplier')"/>
+			<acme:menu-suboption code="master.menu.user-account.supplier" action="/authenticated/supplier/update" access="hasRole('Supplier')"/>
+			<acme:menu-suboption code="master.menu.user-account.become-buyer" action="/authenticated/buyer/create" access="!hasRole('Buyer')"/>
+			<acme:menu-suboption code="master.menu.user-account.buyer" action="/authenticated/buyer/update" access="hasRole('Buyer')"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
