@@ -28,6 +28,7 @@
 	<acme:form-textbox code="authenticated.acme-item.label.is-new" path="isNew"/>
 	
   	<acme:form-return code="authenticated.acme-item.button.return"/>
+  	<acme:form-submit test="${command == 'show'}" code="authenticated.acme-item.specification-sheets" method="get" action="/authenticated/specification-sheet/list?AcmeItemId=${AcmeItemId}"/>
   	<acme:form-submit test="${isBuyer}" code="authenticated.acme-item.request" method="get" action="/buyer/acme-item-request/create?AcmeItemId=${id}"/>
   	
 	

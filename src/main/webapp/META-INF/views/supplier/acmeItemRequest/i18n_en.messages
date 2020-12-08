@@ -15,7 +15,7 @@ supplier.acme-item-request.label.notes = Notes
 supplier.acme-item-request.label.status = Status
 supplier.acme-item-request.label.justification = Justification
 supplier.acme-item-request.label.buyer = Buyer
-supplier.acme-item-request.label.acme-item = Acme Item
+supplier.acme-item-request.label.acme-item = Item
 	
 supplier.acme-item-request.button.accept = Accept
 supplier.acme-item-request.button.reject = Reject

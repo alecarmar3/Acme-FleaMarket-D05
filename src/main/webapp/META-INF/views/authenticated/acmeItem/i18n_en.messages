@@ -20,5 +20,5 @@ authenticated.acme-item.label.additional-information = Additional information
 authenticated.acme-item.label.is-new = Is new
 	
 authenticated.acme-item.specification-sheets = Specification sheets
-authenticated.acme-item.request = Request Acme Item
+authenticated.acme-item.request = Request Item
 authenticated.acme-item.button.return = Return

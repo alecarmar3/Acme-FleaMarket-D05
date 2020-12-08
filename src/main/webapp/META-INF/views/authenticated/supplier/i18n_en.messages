@@ -10,7 +10,7 @@
 
 authenticated.supplier.label.company = Company
 authenticated.supplier.label.home-page = Home page
-authenticated.supplier.label.acme-item-category = Acme Item category
+authenticated.supplier.label.acme-item-category = Item category
 authenticated.supplier.label.description = Description
 
 authenticated.supplier.button.create = Register

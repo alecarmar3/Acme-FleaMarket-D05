@@ -45,7 +45,7 @@ public class AuthenticatedAcmeItemShowService implements AbstractShowService<Aut
 		int AcmeItemId = request.getModel().getInteger("id");
 		model.setAttribute("AcmeItemId", AcmeItemId);
 
-		request.unbind(entity, model, "ticker", "creationDate", "updateDate", "title", "category", "description", "price", "photo", "additionalInformation", "isNew");
+		request.unbind(entity, model, "ticker", "creationDate", "updateDate", "title", "category", "description", "price", "photo", "additionalInformation", "finalMode", "isNew");
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class AuthenticatedSpecificationSheetShowService implements AbstractShowS
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "indexer", "title", "description", "photo", "acmeItem");
+		request.unbind(entity, model, "indexer", "sheetTitle", "sheetDescription", "photo", "acmeItem.title");
 	}
 
 	@Override

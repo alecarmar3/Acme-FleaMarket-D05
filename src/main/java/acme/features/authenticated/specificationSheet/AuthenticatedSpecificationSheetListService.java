@@ -32,7 +32,7 @@ public class AuthenticatedSpecificationSheetListService implements AbstractListS
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "indexer", "title", "acmeItem.title");
+		request.unbind(entity, model, "indexer", "sheetTitle", "acmeItem.title");
 	}
 
 	@Override
@@ -40,9 +40,9 @@ public class AuthenticatedSpecificationSheetListService implements AbstractListS
 		assert request != null;
 		Collection<SpecificationSheet> result;
 
-		int acmeItemId = request.getModel().getInteger("id");
+		int id = request.getModel().getInteger("AcmeItemId");
 
-		result = this.repository.findSpecificationSheetsByAcmeItem(acmeItemId);
+		result = this.repository.findSpecificationSheetsByAcmeItem(id);
 
 		return result;
 	}

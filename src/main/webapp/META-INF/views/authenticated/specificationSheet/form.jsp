@@ -16,13 +16,12 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="authenticated.specification-sheet.label.indexer" path="indexer" readonly="true"/>
-	<acme:form-textbox code="authenticated.specification-sheet.label.title" path="title" readonly="true"/>
-	<acme:form-textarea code="authenticated.specification-sheet.label.description" path="description" readonly="true"/>
-	<acme:form-url code="authenticated.specification-sheet.label.photo" path="photo" readonly="true"/>
-	<acme:form-textbox code="authenticated.specification-sheet.label.acme-item" path="acmeItem.title" readonly="true"/>
+	<acme:form-textbox code="authenticated.specification-sheet.label.indexer" path="indexer"/>
+	<acme:form-textbox code="authenticated.specification-sheet.label.title" path="sheetTitle"/>
+	<acme:form-textarea code="authenticated.specification-sheet.label.description" path="sheetDescription"/>
+	<acme:form-url code="authenticated.specification-sheet.label.photo" path="photo"/>
+	<acme:form-textbox code="authenticated.specification-sheet.label.acme-item" path="acmeItem.title"/>
 	
-  	<acme:form-return code="authenticated.specification-sheet.button.return"/>
-  	
+  	<acme:form-return code="authenticated.specification-sheet.button.return"/>  	
 	
 </acme:form>

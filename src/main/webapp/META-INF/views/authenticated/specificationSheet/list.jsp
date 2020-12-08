@@ -18,6 +18,6 @@
 
 <acme:list>
 	<acme:list-column code="authenticated.specification-sheet.label.indexer" path="indexer" width="25%"/>
-	<acme:list-column code="authenticated.specification-sheet.label.title" path="title" width="25%"/>
+	<acme:list-column code="authenticated.specification-sheet.label.title" path="sheetTitle" width="25%"/>
 	<acme:list-column code="authenticated.specification-sheet.label.acme-item" path="acmeItem.title" width="25%"/>
 </acme:list>

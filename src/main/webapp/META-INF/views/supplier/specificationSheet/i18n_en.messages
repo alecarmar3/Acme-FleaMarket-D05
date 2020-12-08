@@ -12,7 +12,7 @@ supplier.specification-sheet.label.indexer = Indexer
 supplier.specification-sheet.label.title = Title
 supplier.specification-sheet.label.description = Description
 supplier.specification-sheet.label.photo = Photo
-supplier.specification-sheet.label.acme-item = Acme Item
+supplier.specification-sheet.label.acme-item = Item
 
 supplier.specification-sheet.form.button.create = Create
 supplier.specification-sheet.button.return = Return

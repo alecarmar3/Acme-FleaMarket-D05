@@ -40,7 +40,7 @@ master.menu.anonymous.tool-sheet.list = List Tool sheets
 master.menu.authenticated = Authenticated
 master.menu.authenticated.advertisement.list = List Advertisements
 master.menu.authenticated.figment.list = List Figments
-master.menu.authenticated.acme-item.list = List Acme Items
+master.menu.authenticated.acme-item.list = List Items
 master.menu.authenticated.material-sheet.list = List Material sheets
 master.menu.authenticated.news.list = List News
 master.menu.authenticated.suggestion.list = List Suggestions
@@ -49,14 +49,14 @@ master.menu.authenticated.tool-sheet.list = List Tool sheets
 # master.menu.supplier #######################################################
 
 master.menu.supplier = Supplier
-master.menu.supplier.acme-item.create = Create Acme Item
-master.menu.supplier.acme-item.list-mine = List my Acme Items
-master.menu.supplier.acme-item-request.list-to-mine = List requests to my Acme Items
+master.menu.supplier.acme-item.create = Create Item
+master.menu.supplier.acme-item.list-mine = List my Items
+master.menu.supplier.acme-item-request.list-to-mine = List requests to my Items
 
 # master.menu.buyer #######################################################
 
 master.menu.buyer = Buyer
-master.menu.buyer.acme-item-request.list-mine = List my Acme Item requests
+master.menu.buyer.acme-item-request.list-mine = List my Item requests
 
 # master.menu.administrator ###################################################
 
@@ -132,5 +132,5 @@ master.license.text = \
 	about you with any other company.  We only use three cookies, namely: \
 	"JSESSIONID" to identify your work session, "remember" to let you authenticate \
 	automatically for a maximum of 31 days, and "language" to store your language \
-	preferences. Additionally, we store an acme item called "returnStack" in your browser's \
+	preferences. Additionally, we store an tem called "returnStack" in your browser's \
 	local storage to keep track of the document to which some buttons must return.

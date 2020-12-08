@@ -13,5 +13,6 @@ authenticated.specification-sheet.label.title = Título
 authenticated.specification-sheet.label.description = Descripción
 authenticated.specification-sheet.label.photo = Foto
 authenticated.specification-sheet.label.acme-item = Objeto
-	
+
+authenticated.specification-sheet.form.button.create = Crear
 authenticated.acme-item.button.return = Volver

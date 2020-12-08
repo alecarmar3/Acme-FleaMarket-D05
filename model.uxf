@@ -357,7 +357,7 @@ Sheet
       <h>56</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Inquiry
+MaterialSheet
 --
 
 </panel_attributes>
@@ -405,7 +405,7 @@ Inquiry
       <h>56</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Overture
+ToolSheet
 --
 
 </panel_attributes>

@@ -12,6 +12,7 @@ authenticated.specification-sheet.label.indexer = Indexer
 authenticated.specification-sheet.label.title = Title
 authenticated.specification-sheet.label.description = Description
 authenticated.specification-sheet.label.photo = Photo
-authenticated.specification-sheet.label.acme-item = Acme Item
-	
-authenticated.acme-item.button.return = Return
+authenticated.specification-sheet.label.acme-item = Item
+
+authenticated.specification-sheet.form.button.create = Create
+authenticated.specification-sheet.button.return = Return

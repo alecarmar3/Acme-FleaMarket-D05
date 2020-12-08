@@ -1,10 +1,13 @@
 
 package acme.features.supplier.acmeItem;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.AcmeItem;
+import acme.entities.SpecificationSheet;
 import acme.entities.roles.Supplier;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -50,7 +53,7 @@ public class SupplierAcmeItemDeleteService implements AbstractDeleteService<Supp
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ticker", "title", "category", "description", "price", "photo", "additionalInformation", "finalMode", "supplier.userAccount.username", "isNew");
+		request.unbind(entity, model, "ticker", "title", "category", "description", "price", "photo", "additionalInformation", "finalMode", "isNew");
 	}
 	@Override
 	public AcmeItem findOne(final Request<AcmeItem> request) {
@@ -73,6 +76,16 @@ public class SupplierAcmeItemDeleteService implements AbstractDeleteService<Supp
 	public void delete(final Request<AcmeItem> request, final AcmeItem entity) {
 		assert request != null;
 		assert entity != null;
+
+		Collection<SpecificationSheet> specificationSheets = this.repository.findSpecificationSheetsByAcmeItem(entity.getId());
+
+		if (!specificationSheets.isEmpty()) {
+
+			for (SpecificationSheet specificationSheet : specificationSheets) {
+				this.repository.delete(specificationSheet);
+			}
+
+		}
 
 		this.repository.delete(entity);
 	}

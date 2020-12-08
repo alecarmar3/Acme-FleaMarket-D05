@@ -30,7 +30,7 @@ public interface BuyerAcmeItemRequestRepository extends AbstractRepository {
 	@Query("select ur from UserRole ur where ur.userAccount.id = ?1")
 	Collection<UserRole> findUserAccountRoles(int id);
 
-	@Query("select ai.ticker from AcmeItem ai")
+	@Query("select air.ticker from AcmeItemRequest air")
 	Collection<String> findTickersInUse();
 
 }

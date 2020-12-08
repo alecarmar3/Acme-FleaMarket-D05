@@ -15,7 +15,7 @@ buyer.acme-item-request.label.creation-date = Fecha de creación
 buyer.acme-item-request.label.quantity = Cantidad
 buyer.acme-item-request.label.notes = Notas
 buyer.acme-item-request.label.buyer = Comprador
-buyer.acme-item-request.label.acme-item = Objeto Acme
+buyer.acme-item-request.label.acme-item = Objeto
 	
 buyer.acme-item-request.button.return = Volver
 buyer.acme-item-request.form.button.create = Mandar petición
